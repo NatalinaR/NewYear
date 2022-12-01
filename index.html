@@ -1,0 +1,804 @@
+<!-- Пожалуйста, не читай код. Это испортит весь сюрприз! -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.0.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.6.1.js" integrity="sha256-3zlB5s2uwoUzrXK3BT7AX3FyvojsraNFxCc2vC/7pNI=" crossorigin="anonymous"></script>
+    
+    <title>Advent Calendar</title>
+
+</head>
+
+<!-- oncontextmenu="return false" -->
+<body oncontextmenu="return false">
+    <section id="modal">
+        <div class="wrapper">
+          <div class="wrappercontent">
+            <div class="close"></div>
+            <div class="box">
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section id = "main">
+        <div class="heading">ADVENT CALENDAR</div>
+        <div id="calendar" class="container" >
+                
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">1</span>
+                        <div class="surprise">
+                            <h2>Первый день зимы!</h2>
+                            <p>Забавный факт: Декабрь повторяет Сентябрь, и оба месяца начинают новое время года!</p>
+                            <a class="button" href="https://youtu.be/EKkzbbLYPuI" target="_blank">Ух ты!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">2</span>
+                        <div class="surprise">
+                            <h2>Вот и пятница!</h2>
+                            <p>Хотите посмеяться?</p>
+                            <a class="button" href="https://youtu.be/kToZ7LVkcXc" target="_blank">Да</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">3</span>
+                        <div class="surprise">
+                            <h2>Почему ёлки не шьют? Они часто теряют иголки!</h2>
+                            <p>Суббота, велика вероятность, что на самом деле сейчас понедельник. Давайте отправимся в путешествие с Олафом!</p>
+                            <a class="button" href="https://kadikama.online/2233-2017-olaf-i-holodnoe-priklyuchenie.html" target="_blank">Вперёд!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">4</span>
+                        <div class="surprise">
+                            <h2>Воскресенье</h2>
+                            <p>Предлагаю сегодня посмотреть небольшой видеоклип с нашей любимой скрипачкой!</p>
+                            <a class="button" href="https://youtu.be/D-dwmYeLLng" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">5</span>
+                        <div class="surprise">
+                            <h2>5 Декабря</h2>
+                            <p>Кто привёз из зимней сказки вам подарков целый воз? Кто ответит без подсказки? Это... Человек, который долгое время не видел лета!</p>
+                            <a class="button" href="https://multfilmysssr.ru/ded-moroz-i-leto-sojuzmultfilm-1969-g/" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">6</span>
+                        <div class="surprise">
+                            <h2>6 Декабря</h2>
+                            <p>Комочек пуха, длинное ухо, прыгает ловко, любит морковку. Кто это? :)</p>
+                            <a class="button" href="https://kadikama.online/829-2012-hraniteli-snov.html" target="_blank">Ответ</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">7</span>
+                        <div class="surprise">
+                            <h2>7 Декабря</h2>
+                            <p>7 часто ассоциируют с удачей. А удачи у этого парня и его немного безумного друга хоть отбавляй!</p>
+                            <a class="button" href="https://youtu.be/gV8g_MoruAY" target="_blank">Кто же они?</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">8</span>
+                        <div class="surprise">
+                            <h2>В нумерологии число 8 означает баланс между материальным и духовным миром</h2>
+                            <p>Важно иметь такой баланс, тогда любые невзгоды - как с гуся вода.</p>
+                            <a class="button" href="https://krepkiy-oreshek-film.ru/" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">9</span>
+                        <div class="surprise">
+                            <h2>Счастливой Пятницы! или Счастливого вечера Пятницы!</h2>
+                            <p>Вы знаете, как девять звучит по немецки? Как отрицание. Именно такой ответ должен был дать Кай Снежной Королеве...</p>
+                            <a class="button" href="https://youtu.be/3VAy0D-57Yc" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">10</span>
+                        <div class="surprise">
+                            <h2>Международный день прав человека</h2>
+                            <p>Мне кажется, в такой замечательный день можно насладиться сказкой "Морозко"!</p>
+                            <a class="button" href="https://youtu.be/TESoWRfVPCc" target="_blank">С радостью!</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">11</span>
+                        <div class="surprise">
+                            <h2>Международный день гор^^!</h2>
+                            <p>По-немецки одиннадцать звучит как "эльф". Какой же фильм сегодня я для вас подготовила?</p>
+                            <a class="button" href="https://ok.ru/video/1792772213285" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">12</span>
+                        <div class="surprise">
+                            <h2>"Понедельник начинается в субботу"</h2>
+                            <p>Вспомнили, откуда эта фраза? Тогда смело жмите Да :)</p>
+                            <a class="button" href="https://youtu.be/3JZkMKubq4o" target="_blank">Да</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">13</span>
+                        <div class="surprise">
+                            <h2>Вторник, вторник, вторник</h2>
+                            <p>13 декабря все радостно отмечают день медведя. Помните милую историю про мишку, который объелся снега?</p>
+                            <a class="button" href="https://multfilmysssr.ru/?s=зимняя+сказка" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">14</span>
+                        <div class="surprise">
+                            <h2>Международный День обезьян</h2>
+                            <p>Одна обезьяна объясняет другой, что такое условный рефлекс: <br>
+                            -Смотри, я сейчас нажму на эту кнопку, и тот тип в белом халате тут же отреагирует и даст мне банан!
+                        <br>А фильм сегодня будет про медицинскую ошибку, которая изменила жизнь одной женщины</p>
+                            <a class="button" href="https://my.mail.ru/bk/lyubva/video/8/616.html" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">15</span>
+                        <div class="surprise">
+                            <h2>Международный День чая</h2>
+                            <p>Завариваем чаёк и готовимся узнать, о чём говорят мужчины</p>
+                            <a class="button" href="https://www.youtube.com/watch?v=RwCbWXoOVkU" target="_blank">О чём?</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">16</span>
+                        <div class="surprise">
+                            <h2>Международный День покорения вершин!</h2>
+                            <p>Очень важно самосовершенствоваться и достигать новых высот! Хоть порой для этого и требуется небольшой толчок... Точнее ссылка в самый негостеприимный город!</p>
+                            <a class="button" href="https://kadikama.online/7993-2019-klaus.html" target="_blank">Вперёд!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">17</span>
+                        <div class="surprise">
+                            <h2>17 Декабря</h2>
+                            <p>Вы замечательные родители! Мы с сестрой любим вас и глубоко ценим всё, что вы для нас делаете на протяжение всей нашей жизни!</p>
+                            <a class="button" href="https://my.mail.ru/list/inna.d/video/235/12307.html" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">18</span>
+                        <div class="surprise">
+                            <h2>До конца года 13 дней!</h2>
+                            <p>А ещё это воскресенье! Завтра понедельник, необходимо зарядиться хорошим настроением!</p>
+                            <a class="button" href="https://youtu.be/4Fyp2DhWd0k" target="_blank">Зарядиться!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">19</span>
+                        <div class="surprise">
+                            <h2>Сегодня в России День военной контрразведки</h2>
+                            <p>Самое время узнать о секретной службе самого Санта-Клауса!</p>
+                            <a class="button" href="https://kadikama.online/1005-2011-sekretnaya-sluzhba-santa-klausa.html" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">20</span>
+                        <div class="surprise">
+                            <h2>20 Декабря - день, когда ещё не поздно найти подарок</h2>
+                            <p>Но герой сегодняшней истории все же опоздал. Как же он исправит ситуацию?</p>
+                            <a class="button" href="https://my.mail.ru/bk/absolyt7/video/3/20.html" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">21</span>
+                        <div class="surprise">
+                            <h2>21 Декабря - День Зимнего солнцестояния</h2>
+                            <p>Как смотрите на то, чтобы зарядиться энергией удачи вместе с Джентельменами Удачи?</p>
+                            <a class="button" href="https://youtu.be/8tJPKSz6Gaw" target="_blank">Вперёд!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">22</span>
+                        <div class="surprise">
+                            <h2>22 Декабря или 9 дней до Нового Года!</h2>
+                            <p>Четверг - время начинать веселье!</p>
+                            <a class="button" href="https://youtu.be/xeQYVvKr5Mo" target="_blank">Вперёд!</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">23</span>
+                        <div class="surprise">
+                            <h2>23 Декабря</h2>
+                            <p>Вредные советы: Если ты хочешь, чтобы у тебя всё было хорошо, положи на Новый год под подушку шоколад и на утро у тебя всё будет в шоколаде! *безудержный смех</p>
+                            <a class="button" href="https://youtu.be/9hDjp0C79-c" target="_blank">Очень смешно</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">24</span>
+                        <div class="surprise">
+                            <h2>24 Декабря</h2>
+                            <p>Сколько месяцев в году? 12 :) Давайте посмотрим про них историю :)</p>
+                            <a class="button" href="https://youtu.be/kjqtNOrNnmQ" target="_blank">Смотреть</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="drop" style="--clr:#ffffff;">
+                    <div class="content">
+                        <span class="day">25</span>
+                        <div class="surprise">
+                            <h2>Вот и каталическое Рождество наступило!</h2>
+                            <p>С праздником! Всего около 6 дней до Нового Года!</p>
+                            <a class="button" href="https://youtu.be/3jg21SZJ8g8" target="_blank">Смотреть!</a>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+    </section>
+
+    
+
+ 
+    
+
+    <script src="logic.js"></script>
+
+
+</body>
+    
+</html>
